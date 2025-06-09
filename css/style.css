@@ -1,16 +1,18 @@
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 
 :root {
-    --main-font: "Anton", arial, sans-serif;
+    --title-font: "Anton", arial, sans-serif;
+    --main-font:  "Share Tech Mono", monospace;
     --main-color: #f11515;
     --color-1: #1d1c1c;
     --color-2: #fff;
 }
 
 * {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--main-font);
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -19,7 +21,6 @@
 html,
 body {
     width: 100vw;
-    height: 100vh;
     overflow-x: hidden;
 }
 
@@ -36,15 +37,16 @@ header ul {
 }
 
 header a {
+    font-family: var(--main-font);
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 500;
     text-transform: uppercase;
-    color: #fff;
+    color: var(--color-2);
 }
 
 header a:focus {
-    border: 1.5px solid #fff;
+    border: 1.5px solid var(--color-2);
     outline: none;
 }
 
@@ -63,7 +65,7 @@ header a:focus {
 
 .hero .h1 {
     position: relative;
-    font-family: var(--main-font);
+    font-family: var(--title-font);
     font-size: 40vw;
     color: var(--main-color);
 }
@@ -92,7 +94,7 @@ header a:focus {
 
 .product-card h2 {
     text-transform: uppercase;
-    color: #fff;
+    color: var(--color-2);
 }
 
 .product-card img {
@@ -113,14 +115,14 @@ header a:focus {
     font-size: 1.2rem;
     font-weight: 500;
     text-transform: uppercase;
-    border: 2px solid #fff;
-    color: #fff;
+    border: 2px solid var(--color-2);
+    color: var(--color-2);
     background-color: transparent;
     transition: .3s ease-in-out;
 }
 
 .product-card button:focus {
-    background-color: #fff;
+    background-color: var(--color-2);
     color: var(--main-color);
     outline: none;
 }
@@ -128,7 +130,7 @@ header a:focus {
 .login {
     padding-block: 3rem;
     background-color: var(--main-color);
-    color: #fff;
+    color: var(--color-2);
 }
 
 .login form {
@@ -146,7 +148,7 @@ header a:focus {
     gap: 10px;
     width: 100%;
     padding-block: 1rem;
-    color: #fff;
+    color: var(--color-2);
 }
 
 .login .input-box label {
@@ -157,11 +159,11 @@ header a:focus {
     width: 90%;
     padding: 5px 15px;
     border: none;
-    border-left: 2px solid #fff;
-    border-bottom: 2px solid #fff;
+    border-left: 2px solid var(--color-2);
+    border-bottom: 2px solid var(--color-2);
     outline: none;
     font-size: 1.1rem;
-    color: #fff;
+    color: var(--color-2);
     background-color: transparent;
 }
 
@@ -175,7 +177,7 @@ header a:focus {
     font-weight: 500;
 }
 
-.login spam {
+.login span {
     padding: 1rem;
     text-transform: capitalize;
 }
@@ -188,19 +190,19 @@ header a:focus {
     font-size: 1.1rem;
     font-weight: 500;
     cursor: pointer;
-    color: #fff;
+    color: var(--color-2);
     background-color: transparent;
     transition: .3s ease-in-out;
 }
 
 .login button:hover {
     color: var(--main-color);
-    background-color: #fff;
+    background-color: var(--color-2);
 }
 
 .login button:focus {
     color: var(--main-color);
-    background-color: #fff;
+    background-color: var(--color-2);
     outline: none;
 }
 
@@ -248,7 +250,7 @@ header a:focus {
 }
 
 .links-area h1 {
-    font-family: var(--main-font);
+    font-family: var(--title-font);
     font-size: 3rem;
     font-weight: normal;
     color: var(--main-color);
@@ -306,37 +308,9 @@ footer {
 
 .terms ul a {
     text-decoration: none;
-    color: #fff;
+    color: var(--color-2);
 }
 
 .terms ul a:hover {
     text-decoration: underline;
-}
-
-.overlay {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    z-index: 2;
-    display: flex;
-}
-
-.bar {
-    width: 10vw;
-    height: 105vh;
-    background-color: var(--main-color);
-}
-
-.counter {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: end;
-    align-items: end;
-    z-index: 1000;
-    padding: .2em .4em;
-    font-family: var(--main-font);
-    font-size: 10vw;
-    color: var(--color-1);
 }
