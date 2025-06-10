@@ -25,7 +25,7 @@ body {
 }
 
 header {
-    padding-block: .2rem;
+    padding-block: .3rem;
     background-color: var(--main-color);
 }
 
@@ -66,7 +66,7 @@ header a:focus {
 .hero .h1 {
     position: relative;
     font-family: var(--title-font);
-    font-size: 40vw;
+    font-size: 45vw;
     color: var(--main-color);
 }
 
@@ -119,6 +119,11 @@ header a:focus {
     color: var(--color-2);
     background-color: transparent;
     transition: .3s ease-in-out;
+}
+
+.product-card button:hover {
+    background-color: var(--color-2);
+    color: #f11515;
 }
 
 .product-card button:focus {
@@ -313,4 +318,12 @@ footer {
 
 .terms ul a:hover {
     text-decoration: underline;
+}
+
+.overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    display: flex;
 }
